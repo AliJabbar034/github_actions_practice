@@ -1,0 +1,17 @@
+
+name:Test Project
+on:push
+jobs:
+    test:
+        runs-on:ubuntu-latest
+        steps:
+            - name:get code
+              uses:action/checkout@v3
+            - name:install nodeJs
+              uses:action/setup-node@v3
+              with:
+                node-version:20
+            - name:install dependencies
+              run:npm ci
+                    
+
