@@ -5,9 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: get code
-        uses: action/checkout@v3
+        uses: actions/checkout@v3
       - name: install nodeJs
-        uses: action/setup-node@v3
+        uses: actions/setup-node@v3
         with:
           node-version: 20
       - name: install dependencies
